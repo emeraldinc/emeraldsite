@@ -4,7 +4,24 @@
 <head>
 <script type="module" src="windowsize.js"></script>
 <style>
-
+@media (max-width: #{$maxWidthContainer + px}) {
+        flex-direction: column-reverse;
+        
+        background-position: center center;
+        height: max-content;
+        .picture{
+            width: fit-content;
+            margin: auto;
+            padding: 0;
+            @include adaptive-value("padding-bottom", 100, 50, 0);
+            img{
+                display: none;
+            }
+        }
+        .textblock_big{
+            @include adaptive-value("padding-bottom", 100, 50, 0);
+        }
+    }
 h1 {text-align: center;}
 .he3
 {
