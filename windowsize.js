@@ -4,4 +4,4 @@ if (navigator.platform === "Android") {
 	
 }
 
-navigator.platform
+alert(navigator.platform)
