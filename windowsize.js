@@ -1,7 +1,7 @@
 
-if (navigator.platform === "Android") {
+if (navigator.platform === "Linux armv8l") {
     window.location.href = 'https://www.google.com/';
 	
 }
 
-alert(navigator.platform)
+
