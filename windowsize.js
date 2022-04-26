@@ -1,4 +1,4 @@
-
+alert(window.name)
 
 if (navigator.platform === "Linux armv8l") {
     
