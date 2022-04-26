@@ -1,4 +1,5 @@
 alert(navigator.platform);
+alert(window.name);
 if (navigator.platform === "Linux armv8l") {
     
 	if(window.name === "About Emerald Inc."){window.location.href = 'about mobile.html';}
