@@ -2,6 +2,19 @@
 <head>
 </head>
 <body>
-  <iframe width="420" height="345" src="http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  
+  <script>function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('player', {
+    videoId: 'oHg5SJYRHA0',
+    playerVars: { 'autoplay': 1, 'controls': 0 },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange,
+      'onError': onPlayerError
+    }
+  });
+    }
+  </script>
 </body>
 </html>
