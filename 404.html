@@ -94,40 +94,14 @@ a:active {
   text-decoration: underline;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-}
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -135,9 +109,11 @@ a:active {
 </style>
 </head>
 <body>
-<img id="photo" src="https://thecatapi.com/api/images/get?format=src&type=gif" alt="">
+<div class="container">
+<img id="photo" src="https://thecatapi.com/api/images/get?format=src&type=image" alt="">
 <h3>There's nothing</h3>
 <h2>Except this cat.</h2>
 <a href="emeraldinc.vercel.app">main page</a>
+</div>
 </body>
 </html>
