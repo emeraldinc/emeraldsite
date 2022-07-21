@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+<style>
+html { 
+  background: url(bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.maintext {
+text-align: center;
+margin: 3% 2px;
+font-family: 'Open Sans', sans-serif;
+font-size: 48px;
+}
+.maintext2 {
+text-align: center;
+margin: 3% 2px;
+font-family: 'Open Sans', sans-serif;
+font-size: 24px;
+}
+.myDiv {
+  border-radius: 20px;
+  padding: 5px;
+  margin: 3% 120px;
+  border: 3px;
+  height: 70%;
+  width: auto;
+  background-color: lightgray;
+  text-align: center;
+}
+.btn1 {
+  color: black;
+  border-color: gray;
+  border-radius: 10px;
+  padding: 15px 32px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 48px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<title>Wor.ld</title>
+<link rel="shortcut icon" href="ico.png">
+<body>
+<h1 class="maintext">Wor.ld</h1>
+<div class="myDiv">
+  <h2 class="maintext2">Guess country by flag</h2>
+  <p class="maintext2">Press button to play</p>
+  <button type="button" class="btn1" id="r">Play!</button> 
+</div>
+<script>
+const co = document.getElementById("r");
+function redir() {
+ window.location.href = 'game.html';
+}
+co.addEventListener('mouseup', function handleClick() 
+{
+redir();
+});
+</script>
+</body>
+</html>
