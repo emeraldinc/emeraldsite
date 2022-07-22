@@ -47,10 +47,11 @@ font-size: 24px;
   border-color: gray;
   border-radius: 8px;
   padding: 15px 24px;
-  width: 150px;
+  width: 100%;
+  height: auto;
   text-align: center;
   text-decoration: none;
-  
+  display: block;
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   margin: 24px 15px;
@@ -61,10 +62,7 @@ font-size: 24px;
   margin: 24px 15px;
   width:200px;
   height:100px;
-  display: auto;
-}
-.innero {
-  display: inline-block;
+  
 }
 
 </style>
@@ -75,16 +73,17 @@ font-size: 24px;
 <body>
 <h1 id="count" class="maintext3">Score: 0</h1>
 <div class="myDiv">
-
-  <img class="flagg" id="ico">
   <h2 class="maintext2">Guess country by flag</h2>
   
-  
-  <div class="innero">
+  <div><img class="flagg" id="ico"></div>
+  <div>
   <button type="button" class="btn1" id="btn0">Play!</button>
   <button type="button" class="btn1" id="btn1">Play!</button>
   <button type="button" class="btn1" id="btn2">Play!</button>
   </div>
+  
+  
+  
   
   
 </div>
